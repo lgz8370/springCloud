@@ -13,27 +13,18 @@
 
 
     <dependencies>
-        <!--spring-Cloud eureka 依赖-->
+        <!--公共-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <groupId>com.ylTech</groupId>
+            <artifactId>shop-common</artifactId>
         </dependency>
-        <!--spring-Cloud web 依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Dalston.RC1</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
+
+        <!--用户-->
         <dependency>
             <groupId>com.ylTech</groupId>
             <artifactId>shop-user-Api</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>

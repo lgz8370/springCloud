@@ -1,9 +1,33 @@
+#注册中心地址
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+#端口
 server:
   port: 8762
+
+#服务注册名称
 spring:
   application:
     name: shop-user-service
+
+#数据库连接地址
+spring:
+  datasource:
+    url: dbc:mysql://192.168.60.12:3306/wolfcode_shop_goods
+    #MySQL驱动
+    driver-class-name: com.mysql.jdbc.Driver
+    #数据库账号
+    username: lgz
+    #数据库密码
+    password: admin
+    #阿里巴巴Druid
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#mybatis的mapper.xml配置文件路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #mybatis设置domain的别名
+  type-aliases-package: cn.wolfcode.shop.domain
