@@ -1,0 +1,14 @@
+.idea
+*/target
+*.iml
+HKTest.*
+generatorConfig.xml
+
+*/.springBeans
+*/.project
+*/.classpath
+*/.settings/*
+.settings/*
+.project
+*.jpg
+*/win64
