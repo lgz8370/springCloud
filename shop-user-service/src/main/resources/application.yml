@@ -12,13 +12,11 @@ server:
 spring:
   application:
     name: shop-user-service
-
-#数据库连接地址
-spring:
   datasource:
-    url: dbc:mysql://192.168.60.12:3306/wolfcode_shop_goods
+  #数据库连接地址
+    url: jdbc:mysql://192.168.60.12:3306/wolfcode_shop_member
     #MySQL驱动
-    driver-class-name: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
     #数据库账号
     username: lgz
     #数据库密码
@@ -30,4 +28,4 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   #mybatis设置domain的别名
-  type-aliases-package: cn.wolfcode.shop.domain
+  type-aliases-package: com.yltech.user.model

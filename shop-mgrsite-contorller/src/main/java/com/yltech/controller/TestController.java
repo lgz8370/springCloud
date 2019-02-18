@@ -1,9 +1,12 @@
 package com.yltech.controller;
 
+import com.yltech.user.model.UserInfo;
 import com.yltech.user.service.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author LuGuoZheng
@@ -19,7 +22,7 @@ public class TestController {
     private ITestService testService;
 
     @RequestMapping("/get")
-    public String home() {
+    public List<UserInfo> home() {
         return testService.get();
     }
 }

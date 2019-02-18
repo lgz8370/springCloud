@@ -1,7 +1,12 @@
 package com.yltech.user.service.impl;
 
+import com.yltech.user.mapper.UserMapper;
+import com.yltech.user.model.UserInfo;
 import com.yltech.user.service.ITestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author LuGuoZheng
@@ -12,8 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestServiceImpl implements ITestService {
 
+    @Autowired
+    private UserMapper userMapper;
+
     @Override
-    public String get() {
-        return "Hello SpringCloud";
+    public List<UserInfo> get() {
+        return userMapper.list();
     }
 }

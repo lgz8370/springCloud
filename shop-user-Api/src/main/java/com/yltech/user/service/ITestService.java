@@ -1,7 +1,10 @@
 package com.yltech.user.service;
 
+import com.yltech.user.model.UserInfo;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
 
 /**
  * @author LuGuoZheng
@@ -13,6 +16,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface ITestService {
 
     @GetMapping("/hi")
-    String get();
+    List<UserInfo> get();
 }
 
