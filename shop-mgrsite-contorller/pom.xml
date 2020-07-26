@@ -12,24 +12,18 @@
     <artifactId>shop-mgrsite-contorller</artifactId>
 
     <dependencies>
-        <!--spring-Cloud eureka 依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-        <!--spring-Cloud web 依赖-->
+        <!-- springboot web依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- nocas -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Dalston.RC1</version>
-            <type>pom</type>
-            <scope>import</scope>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+
         <dependency>
             <groupId>com.ylTech</groupId>
             <artifactId>shop-user-Api</artifactId>

@@ -6,13 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="shop-common" />
-        <module name="shop-Eureka-Server" />
-        <module name="shop-mgrsite-contorller" />
-        <module name="shop-user-Api" />
         <module name="shop-user-service" />
+        <module name="shop-mgrsite-contorller" />
+        <module name="shop-common" />
+        <module name="shop-user-Api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="10" />
+    <bytecodeTargetLevel target="10">
+      <module name="shop-Eureka-Server" target="1.10" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-Eureka-Server" options="-parameters" />
+      <module name="shop-common" options="-parameters" />
+      <module name="shop-mgrsite-contorller" options="-parameters" />
+      <module name="shop-user-Api" options="-parameters" />
+      <module name="shop-user-service" options="-parameters" />
+    </option>
   </component>
 </project>
